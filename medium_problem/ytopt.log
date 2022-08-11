@@ -1,0 +1,737 @@
+2022-07-12 04:32:56|29150|INFO|ytopt:46] 
+
+Loading ytopt
+--------------
+2022-07-12 04:32:56|29150|INFO|ytopt.evaluator.subprocess_evaluator:102] Subprocess Evaluator will execute myobj() from module problem
+2022-07-12 04:32:56|29150|INFO|ytopt.search.search:51] Options: {'cache_key': None, 'evaluator': 'subprocess', 'problem': 'problem.Problem'}
+2022-07-12 04:32:56|29150|INFO|ytopt.search.search:52] Hyperparameter space definition: Configuration space object:
+  Hyperparameters:
+    p0, Type: UniformInteger, Range: [1, 4], Default: 1
+    p1, Type: UniformInteger, Range: [100000, 8000000], Default: 1000000, Q: 10000
+    p2, Type: UniformInteger, Range: [100, 100000], Default: 4000, Q: 100
+    p3, Type: UniformInteger, Range: [0, 100000], Default: 20000, Q: 1000
+    p4, Type: Categorical, Choices: { -Dqueueless=on ,  -Dqueueless=off }, Default:  -Dqueueless=on 
+
+2022-07-12 04:32:56|29150|INFO|ytopt.search.search:53] Created "subprocess" evaluator
+2022-07-12 04:32:56|29150|INFO|ytopt.search.search:54] Evaluator: num_workers is 1
+2022-07-12 04:32:56|29150|INFO|ytopt.search.hps.ambs:47] Initializing AMBS
+2022-07-12 04:32:56|29150|INFO|ytopt.search.hps.optimizer.optimizer:66] Using skopt.Optimizer with RF base_estimator
+2022-07-12 04:32:56|29150|INFO|ytopt.search.hps.ambs:98] Generating 1 initial points...
+2022-07-12 04:32:56|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 5760000, 'p2': 55500, 'p3': 70000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:32:56|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:00:0.00
+2022-07-12 04:35:00|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 5760000, "p2": 55500, "p3": 70000, "p4": " -Dqueueless=off "} --> -75388.1
+2022-07-12 04:35:00|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 5760000, 'p2': 55500, 'p3': 70000, 'p4': ' -Dqueueless=off '} y: -75388.1
+2022-07-12 04:35:00|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:35:00|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 5760000, 'p2': 55500, 'p3': 70000, 'p4': ' -Dqueueless=off '} --> (1, 5760000, 55500, 70000, ' -Dqueueless=off '): evaluated objective: -75388.1
+2022-07-12 04:35:00|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:35:01|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 1440000, 74300, 28000, ' -Dqueueless=on '] lie: -75388.1
+2022-07-12 04:35:01|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 1440000, 'p2': 74300, 'p3': 28000, 'p4': ' -Dqueueless=on '}
+2022-07-12 04:35:03|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:02:6.35
+2022-07-12 04:37:02|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 1440000, "p2": 74300, "p3": 28000, "p4": " -Dqueueless=on "} --> -72033.1
+2022-07-12 04:37:02|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 1440000, 'p2': 74300, 'p3': 28000, 'p4': ' -Dqueueless=on '} y: -72033.1
+2022-07-12 04:37:02|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:37:02|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 1440000, 'p2': 74300, 'p3': 28000, 'p4': ' -Dqueueless=on '} --> (1, 1440000, 74300, 28000, ' -Dqueueless=on '): evaluated objective: -72033.1
+2022-07-12 04:37:02|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:37:02|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [4, 320000, 74000, 78000, ' -Dqueueless=on '] lie: -72033.1
+2022-07-12 04:37:02|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 4, 'p1': 320000, 'p2': 74000, 'p3': 78000, 'p4': ' -Dqueueless=on '}
+2022-07-12 04:37:02|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:04:6.06
+2022-07-12 04:38:56|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 4, "p1": 320000, "p2": 74000, "p3": 78000, "p4": " -Dqueueless=on "} --> -68827.8
+2022-07-12 04:38:56|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 4, 'p1': 320000, 'p2': 74000, 'p3': 78000, 'p4': ' -Dqueueless=on '} y: -68827.8
+2022-07-12 04:38:56|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:38:56|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 4, 'p1': 320000, 'p2': 74000, 'p3': 78000, 'p4': ' -Dqueueless=on '} --> (4, 320000, 74000, 78000, ' -Dqueueless=on '): evaluated objective: -68827.8
+2022-07-12 04:38:56|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:38:57|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7300000, 39400, 87000, ' -Dqueueless=off '] lie: -68827.8
+2022-07-12 04:38:57|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7300000, 'p2': 39400, 'p3': 87000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:38:57|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:06:0.37
+2022-07-12 04:40:48|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7300000, "p2": 39400, "p3": 87000, "p4": " -Dqueueless=off "} --> -75302.5
+2022-07-12 04:40:48|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7300000, 'p2': 39400, 'p3': 87000, 'p4': ' -Dqueueless=off '} y: -75302.5
+2022-07-12 04:40:48|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:40:48|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7300000, 'p2': 39400, 'p3': 87000, 'p4': ' -Dqueueless=off '} --> (2, 7300000, 39400, 87000, ' -Dqueueless=off '): evaluated objective: -75302.5
+2022-07-12 04:40:48|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:40:49|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [3, 3580000, 93500, 3000, ' -Dqueueless=on '] lie: -68827.8
+2022-07-12 04:40:49|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 3, 'p1': 3580000, 'p2': 93500, 'p3': 3000, 'p4': ' -Dqueueless=on '}
+2022-07-12 04:40:49|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:07:52.53
+2022-07-12 04:42:36|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 3, "p1": 3580000, "p2": 93500, "p3": 3000, "p4": " -Dqueueless=on "} --> -72983.8
+2022-07-12 04:42:36|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 3, 'p1': 3580000, 'p2': 93500, 'p3': 3000, 'p4': ' -Dqueueless=on '} y: -72983.8
+2022-07-12 04:42:36|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:42:36|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 3, 'p1': 3580000, 'p2': 93500, 'p3': 3000, 'p4': ' -Dqueueless=on '} --> (3, 3580000, 93500, 3000, ' -Dqueueless=on '): evaluated objective: -72983.8
+2022-07-12 04:42:37|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:42:37|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 4780000, 46400, 21000, ' -Dqueueless=on '] lie: -68827.8
+2022-07-12 04:42:37|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 4780000, 'p2': 46400, 'p3': 21000, 'p4': ' -Dqueueless=on '}
+2022-07-12 04:42:37|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:09:41.01
+2022-07-12 04:44:37|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 4780000, "p2": 46400, "p3": 21000, "p4": " -Dqueueless=on "} --> -69971.9
+2022-07-12 04:44:37|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 4780000, 'p2': 46400, 'p3': 21000, 'p4': ' -Dqueueless=on '} y: -69971.9
+2022-07-12 04:44:37|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:44:37|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 4780000, 'p2': 46400, 'p3': 21000, 'p4': ' -Dqueueless=on '} --> (2, 4780000, 46400, 21000, ' -Dqueueless=on '): evaluated objective: -69971.9
+2022-07-12 04:44:37|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:44:38|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 1050000, 41500, 93000, ' -Dqueueless=off '] lie: -68827.8
+2022-07-12 04:44:38|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 1050000, 'p2': 41500, 'p3': 93000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:44:38|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:11:41.82
+2022-07-12 04:46:27|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 1050000, "p2": 41500, "p3": 93000, "p4": " -Dqueueless=off "} --> -76028.4
+2022-07-12 04:46:27|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 1050000, 'p2': 41500, 'p3': 93000, 'p4': ' -Dqueueless=off '} y: -76028.4
+2022-07-12 04:46:27|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:46:27|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 1050000, 'p2': 41500, 'p3': 93000, 'p4': ' -Dqueueless=off '} --> (2, 1050000, 41500, 93000, ' -Dqueueless=off '): evaluated objective: -76028.4
+2022-07-12 04:46:28|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:46:29|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [3, 7650000, 57800, 60000, ' -Dqueueless=off '] lie: -68827.8
+2022-07-12 04:46:29|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 3, 'p1': 7650000, 'p2': 57800, 'p3': 60000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:46:29|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:13:32.45
+2022-07-12 04:48:24|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 3, "p1": 7650000, "p2": 57800, "p3": 60000, "p4": " -Dqueueless=off "} --> -73398.0
+2022-07-12 04:48:24|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 3, 'p1': 7650000, 'p2': 57800, 'p3': 60000, 'p4': ' -Dqueueless=off '} y: -73398.0
+2022-07-12 04:48:24|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:48:24|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 3, 'p1': 7650000, 'p2': 57800, 'p3': 60000, 'p4': ' -Dqueueless=off '} --> (3, 7650000, 57800, 60000, ' -Dqueueless=off '): evaluated objective: -73398.0
+2022-07-12 04:48:24|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:48:25|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5000000, 1700, 68000, ' -Dqueueless=off '] lie: -68827.8
+2022-07-12 04:48:25|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5000000, 'p2': 1700, 'p3': 68000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:48:25|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:15:28.64
+2022-07-12 04:50:13|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5000000, "p2": 1700, "p3": 68000, "p4": " -Dqueueless=off "} --> -49040.1
+2022-07-12 04:50:13|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5000000, 'p2': 1700, 'p3': 68000, 'p4': ' -Dqueueless=off '} y: -49040.1
+2022-07-12 04:50:13|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:50:13|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5000000, 'p2': 1700, 'p3': 68000, 'p4': ' -Dqueueless=off '} --> (2, 5000000, 1700, 68000, ' -Dqueueless=off '): evaluated objective: -49040.1
+2022-07-12 04:50:14|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:50:15|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [3, 7700000, 42600, 70000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 04:50:15|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 3, 'p1': 7700000, 'p2': 42600, 'p3': 70000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:50:15|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:17:18.36
+2022-07-12 04:52:17|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 3, "p1": 7700000, "p2": 42600, "p3": 70000, "p4": " -Dqueueless=off "} --> -73496.2
+2022-07-12 04:52:17|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 3, 'p1': 7700000, 'p2': 42600, 'p3': 70000, 'p4': ' -Dqueueless=off '} y: -73496.2
+2022-07-12 04:52:17|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:52:17|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 3, 'p1': 7700000, 'p2': 42600, 'p3': 70000, 'p4': ' -Dqueueless=off '} --> (3, 7700000, 42600, 70000, ' -Dqueueless=off '): evaluated objective: -73496.2
+2022-07-12 04:52:18|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:52:19|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 6840000, 10700, 99000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 04:52:19|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 6840000, 'p2': 10700, 'p3': 99000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:52:19|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:19:22.47
+2022-07-12 04:54:24|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 6840000, "p2": 10700, "p3": 99000, "p4": " -Dqueueless=off "} --> -70423.5
+2022-07-12 04:54:24|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 6840000, 'p2': 10700, 'p3': 99000, 'p4': ' -Dqueueless=off '} y: -70423.5
+2022-07-12 04:54:24|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:54:24|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 6840000, 'p2': 10700, 'p3': 99000, 'p4': ' -Dqueueless=off '} --> (2, 6840000, 10700, 99000, ' -Dqueueless=off '): evaluated objective: -70423.5
+2022-07-12 04:54:25|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:54:25|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7400000, 42500, 94000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 04:54:25|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7400000, 'p2': 42500, 'p3': 94000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:54:25|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:21:28.91
+2022-07-12 04:56:13|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7400000, "p2": 42500, "p3": 94000, "p4": " -Dqueueless=off "} --> -76138.9
+2022-07-12 04:56:13|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7400000, 'p2': 42500, 'p3': 94000, 'p4': ' -Dqueueless=off '} y: -76138.9
+2022-07-12 04:56:13|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:56:13|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7400000, 'p2': 42500, 'p3': 94000, 'p4': ' -Dqueueless=off '} --> (2, 7400000, 42500, 94000, ' -Dqueueless=off '): evaluated objective: -76138.9
+2022-07-12 04:56:14|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:56:15|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 7420000, 41700, 94000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 04:56:15|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 7420000, 'p2': 41700, 'p3': 94000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:56:15|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:23:18.54
+2022-07-12 04:57:58|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 7420000, "p2": 41700, "p3": 94000, "p4": " -Dqueueless=off "} --> -75061.8
+2022-07-12 04:57:58|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 7420000, 'p2': 41700, 'p3': 94000, 'p4': ' -Dqueueless=off '} y: -75061.8
+2022-07-12 04:57:58|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 04:57:58|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 7420000, 'p2': 41700, 'p3': 94000, 'p4': ' -Dqueueless=off '} --> (1, 7420000, 41700, 94000, ' -Dqueueless=off '): evaluated objective: -75061.8
+2022-07-12 04:57:59|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 04:58:00|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7260000, 40700, 93000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 04:58:00|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7260000, 'p2': 40700, 'p3': 93000, 'p4': ' -Dqueueless=off '}
+2022-07-12 04:58:00|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:25:3.53
+2022-07-12 05:00:09|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7260000, "p2": 40700, "p3": 93000, "p4": " -Dqueueless=off "} --> -75668.3
+2022-07-12 05:00:09|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7260000, 'p2': 40700, 'p3': 93000, 'p4': ' -Dqueueless=off '} y: -75668.3
+2022-07-12 05:00:09|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:00:09|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7260000, 'p2': 40700, 'p3': 93000, 'p4': ' -Dqueueless=off '} --> (2, 7260000, 40700, 93000, ' -Dqueueless=off '): evaluated objective: -75668.3
+2022-07-12 05:00:10|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:00:10|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7370000, 40600, 95000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:00:10|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7370000, 'p2': 40600, 'p3': 95000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:00:10|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:27:13.96
+2022-07-12 05:02:13|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7370000, "p2": 40600, "p3": 95000, "p4": " -Dqueueless=off "} --> -75388.9
+2022-07-12 05:02:13|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7370000, 'p2': 40600, 'p3': 95000, 'p4': ' -Dqueueless=off '} y: -75388.9
+2022-07-12 05:02:13|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:02:13|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7370000, 'p2': 40600, 'p3': 95000, 'p4': ' -Dqueueless=off '} --> (2, 7370000, 40600, 95000, ' -Dqueueless=off '): evaluated objective: -75388.9
+2022-07-12 05:02:13|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:02:14|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7100000, 40900, 77000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:02:14|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7100000, 'p2': 40900, 'p3': 77000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:02:14|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:29:17.81
+2022-07-12 05:04:09|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7100000, "p2": 40900, "p3": 77000, "p4": " -Dqueueless=off "} --> -76594.1
+2022-07-12 05:04:09|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7100000, 'p2': 40900, 'p3': 77000, 'p4': ' -Dqueueless=off '} y: -76594.1
+2022-07-12 05:04:09|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:04:09|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7100000, 'p2': 40900, 'p3': 77000, 'p4': ' -Dqueueless=off '} --> (2, 7100000, 40900, 77000, ' -Dqueueless=off '): evaluated objective: -76594.1
+2022-07-12 05:04:10|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:04:10|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7680000, 40100, 79000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:04:10|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7680000, 'p2': 40100, 'p3': 79000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:04:10|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:31:14.15
+2022-07-12 05:06:14|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7680000, "p2": 40100, "p3": 79000, "p4": " -Dqueueless=off "} --> -77146.1
+2022-07-12 05:06:14|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7680000, 'p2': 40100, 'p3': 79000, 'p4': ' -Dqueueless=off '} y: -77146.1
+2022-07-12 05:06:14|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:06:14|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7680000, 'p2': 40100, 'p3': 79000, 'p4': ' -Dqueueless=off '} --> (2, 7680000, 40100, 79000, ' -Dqueueless=off '): evaluated objective: -77146.1
+2022-07-12 05:06:14|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:06:15|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7280000, 14900, 83000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:06:15|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7280000, 'p2': 14900, 'p3': 83000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:06:15|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:33:18.63
+2022-07-12 05:08:15|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7280000, "p2": 14900, "p3": 83000, "p4": " -Dqueueless=off "} --> -71847.6
+2022-07-12 05:08:15|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7280000, 'p2': 14900, 'p3': 83000, 'p4': ' -Dqueueless=off '} y: -71847.6
+2022-07-12 05:08:15|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:08:15|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7280000, 'p2': 14900, 'p3': 83000, 'p4': ' -Dqueueless=off '} --> (2, 7280000, 14900, 83000, ' -Dqueueless=off '): evaluated objective: -71847.6
+2022-07-12 05:08:15|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:08:16|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [4, 7600000, 39300, 93000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:08:16|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 4, 'p1': 7600000, 'p2': 39300, 'p3': 93000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:08:16|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:35:19.80
+2022-07-12 05:10:03|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 4, "p1": 7600000, "p2": 39300, "p3": 93000, "p4": " -Dqueueless=off "} --> -72255.2
+2022-07-12 05:10:03|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 4, 'p1': 7600000, 'p2': 39300, 'p3': 93000, 'p4': ' -Dqueueless=off '} y: -72255.2
+2022-07-12 05:10:03|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:10:03|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 4, 'p1': 7600000, 'p2': 39300, 'p3': 93000, 'p4': ' -Dqueueless=off '} --> (4, 7600000, 39300, 93000, ' -Dqueueless=off '): evaluated objective: -72255.2
+2022-07-12 05:10:04|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:10:05|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7200000, 40000, 39000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:10:05|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7200000, 'p2': 40000, 'p3': 39000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:10:05|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:37:8.43
+2022-07-12 05:12:07|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7200000, "p2": 40000, "p3": 39000, "p4": " -Dqueueless=off "} --> -74970.8
+2022-07-12 05:12:07|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7200000, 'p2': 40000, 'p3': 39000, 'p4': ' -Dqueueless=off '} y: -74970.8
+2022-07-12 05:12:07|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:12:07|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7200000, 'p2': 40000, 'p3': 39000, 'p4': ' -Dqueueless=off '} --> (2, 7200000, 40000, 39000, ' -Dqueueless=off '): evaluated objective: -74970.8
+2022-07-12 05:12:08|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:12:09|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 4960000, 40700, 79000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:12:09|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 4960000, 'p2': 40700, 'p3': 79000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:12:09|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:39:12.26
+2022-07-12 05:14:00|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 4960000, "p2": 40700, "p3": 79000, "p4": " -Dqueueless=off "} --> -74476.6
+2022-07-12 05:14:00|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 4960000, 'p2': 40700, 'p3': 79000, 'p4': ' -Dqueueless=off '} y: -74476.6
+2022-07-12 05:14:00|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:14:00|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 4960000, 'p2': 40700, 'p3': 79000, 'p4': ' -Dqueueless=off '} --> (1, 4960000, 40700, 79000, ' -Dqueueless=off '): evaluated objective: -74476.6
+2022-07-12 05:14:01|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:14:02|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 7350000, 41600, 45000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:14:02|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 7350000, 'p2': 41600, 'p3': 45000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:14:02|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:41:5.44
+2022-07-12 05:16:06|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 7350000, "p2": 41600, "p3": 45000, "p4": " -Dqueueless=off "} --> -73728.6
+2022-07-12 05:16:06|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 7350000, 'p2': 41600, 'p3': 45000, 'p4': ' -Dqueueless=off '} y: -73728.6
+2022-07-12 05:16:06|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:16:06|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 7350000, 'p2': 41600, 'p3': 45000, 'p4': ' -Dqueueless=off '} --> (1, 7350000, 41600, 45000, ' -Dqueueless=off '): evaluated objective: -73728.6
+2022-07-12 05:16:07|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:16:07|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7850000, 39800, 90000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:16:07|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7850000, 'p2': 39800, 'p3': 90000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:16:07|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:43:11.16
+2022-07-12 05:18:19|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7850000, "p2": 39800, "p3": 90000, "p4": " -Dqueueless=off "} --> -75409.7
+2022-07-12 05:18:19|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7850000, 'p2': 39800, 'p3': 90000, 'p4': ' -Dqueueless=off '} y: -75409.7
+2022-07-12 05:18:19|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:18:19|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7850000, 'p2': 39800, 'p3': 90000, 'p4': ' -Dqueueless=off '} --> (2, 7850000, 39800, 90000, ' -Dqueueless=off '): evaluated objective: -75409.7
+2022-07-12 05:18:20|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:18:21|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5170000, 40000, 92000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:18:21|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5170000, 'p2': 40000, 'p3': 92000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:18:21|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:45:24.27
+2022-07-12 05:20:27|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5170000, "p2": 40000, "p3": 92000, "p4": " -Dqueueless=off "} --> -75529.6
+2022-07-12 05:20:27|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5170000, 'p2': 40000, 'p3': 92000, 'p4': ' -Dqueueless=off '} y: -75529.6
+2022-07-12 05:20:27|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:20:27|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5170000, 'p2': 40000, 'p3': 92000, 'p4': ' -Dqueueless=off '} --> (2, 5170000, 40000, 92000, ' -Dqueueless=off '): evaluated objective: -75529.6
+2022-07-12 05:20:27|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:20:28|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7920000, 27000, 89000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:20:28|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7920000, 'p2': 27000, 'p3': 89000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:20:28|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:47:31.77
+2022-07-12 05:22:27|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7920000, "p2": 27000, "p3": 89000, "p4": " -Dqueueless=off "} --> -74442.2
+2022-07-12 05:22:27|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7920000, 'p2': 27000, 'p3': 89000, 'p4': ' -Dqueueless=off '} y: -74442.2
+2022-07-12 05:22:27|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:22:27|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7920000, 'p2': 27000, 'p3': 89000, 'p4': ' -Dqueueless=off '} --> (2, 7920000, 27000, 89000, ' -Dqueueless=off '): evaluated objective: -74442.2
+2022-07-12 05:22:28|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:22:28|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 350000, 40900, 88000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:22:28|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 350000, 'p2': 40900, 'p3': 88000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:22:28|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:49:32.10
+2022-07-12 05:24:36|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 350000, "p2": 40900, "p3": 88000, "p4": " -Dqueueless=off "} --> -75708.5
+2022-07-12 05:24:36|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 350000, 'p2': 40900, 'p3': 88000, 'p4': ' -Dqueueless=off '} y: -75708.5
+2022-07-12 05:24:36|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:24:36|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 350000, 'p2': 40900, 'p3': 88000, 'p4': ' -Dqueueless=off '} --> (2, 350000, 40900, 88000, ' -Dqueueless=off '): evaluated objective: -75708.5
+2022-07-12 05:24:36|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:24:37|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 3460000, 41100, 95000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:24:37|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 3460000, 'p2': 41100, 'p3': 95000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:24:37|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:51:40.77
+2022-07-12 05:26:36|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 3460000, "p2": 41100, "p3": 95000, "p4": " -Dqueueless=off "} --> -76119.0
+2022-07-12 05:26:36|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 3460000, 'p2': 41100, 'p3': 95000, 'p4': ' -Dqueueless=off '} y: -76119.0
+2022-07-12 05:26:36|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:26:36|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 3460000, 'p2': 41100, 'p3': 95000, 'p4': ' -Dqueueless=off '} --> (2, 3460000, 41100, 95000, ' -Dqueueless=off '): evaluated objective: -76119.0
+2022-07-12 05:26:37|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:26:38|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5080000, 41000, 70000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:26:38|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5080000, 'p2': 41000, 'p3': 70000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:26:38|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:53:41.37
+2022-07-12 05:28:27|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5080000, "p2": 41000, "p3": 70000, "p4": " -Dqueueless=off "} --> -74869.0
+2022-07-12 05:28:27|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5080000, 'p2': 41000, 'p3': 70000, 'p4': ' -Dqueueless=off '} y: -74869.0
+2022-07-12 05:28:27|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:28:27|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5080000, 'p2': 41000, 'p3': 70000, 'p4': ' -Dqueueless=off '} --> (2, 5080000, 41000, 70000, ' -Dqueueless=off '): evaluated objective: -74869.0
+2022-07-12 05:28:27|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:28:28|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 4060000, 41100, 68000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:28:28|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 4060000, 'p2': 41100, 'p3': 68000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:28:28|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:55:31.75
+2022-07-12 05:30:20|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 4060000, "p2": 41100, "p3": 68000, "p4": " -Dqueueless=off "} --> -73719.9
+2022-07-12 05:30:20|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 4060000, 'p2': 41100, 'p3': 68000, 'p4': ' -Dqueueless=off '} y: -73719.9
+2022-07-12 05:30:20|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:30:20|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 4060000, 'p2': 41100, 'p3': 68000, 'p4': ' -Dqueueless=off '} --> (2, 4060000, 41100, 68000, ' -Dqueueless=off '): evaluated objective: -73719.9
+2022-07-12 05:30:21|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:30:21|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 340000, 39800, 88000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:30:21|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 340000, 'p2': 39800, 'p3': 88000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:30:21|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:57:25.02
+2022-07-12 05:32:21|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 340000, "p2": 39800, "p3": 88000, "p4": " -Dqueueless=off "} --> -76049.8
+2022-07-12 05:32:21|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 340000, 'p2': 39800, 'p3': 88000, 'p4': ' -Dqueueless=off '} y: -76049.8
+2022-07-12 05:32:21|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:32:21|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 340000, 'p2': 39800, 'p3': 88000, 'p4': ' -Dqueueless=off '} --> (2, 340000, 39800, 88000, ' -Dqueueless=off '): evaluated objective: -76049.8
+2022-07-12 05:32:22|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:32:22|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 380000, 25800, 87000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:32:22|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 380000, 'p2': 25800, 'p3': 87000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:32:22|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:59:26.03
+2022-07-12 05:34:40|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 380000, "p2": 25800, "p3": 87000, "p4": " -Dqueueless=off "} --> -75234.8
+2022-07-12 05:34:40|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 380000, 'p2': 25800, 'p3': 87000, 'p4': ' -Dqueueless=off '} y: -75234.8
+2022-07-12 05:34:40|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:34:40|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 380000, 'p2': 25800, 'p3': 87000, 'p4': ' -Dqueueless=off '} --> (2, 380000, 25800, 87000, ' -Dqueueless=off '): evaluated objective: -75234.8
+2022-07-12 05:34:41|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:34:41|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 2250000, 32700, 96000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:34:41|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 2250000, 'p2': 32700, 'p3': 96000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:34:41|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:01:45.15
+2022-07-12 05:36:44|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 2250000, "p2": 32700, "p3": 96000, "p4": " -Dqueueless=off "} --> -74464.9
+2022-07-12 05:36:44|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 2250000, 'p2': 32700, 'p3': 96000, 'p4': ' -Dqueueless=off '} y: -74464.9
+2022-07-12 05:36:44|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:36:44|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 2250000, 'p2': 32700, 'p3': 96000, 'p4': ' -Dqueueless=off '} --> (1, 2250000, 32700, 96000, ' -Dqueueless=off '): evaluated objective: -74464.9
+2022-07-12 05:36:45|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:36:46|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 2960000, 24200, 86000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:36:46|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 2960000, 'p2': 24200, 'p3': 86000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:36:46|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:03:49.61
+2022-07-12 05:38:36|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 2960000, "p2": 24200, "p3": 86000, "p4": " -Dqueueless=off "} --> -74980.0
+2022-07-12 05:38:36|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 2960000, 'p2': 24200, 'p3': 86000, 'p4': ' -Dqueueless=off '} y: -74980.0
+2022-07-12 05:38:36|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:38:36|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 2960000, 'p2': 24200, 'p3': 86000, 'p4': ' -Dqueueless=off '} --> (2, 2960000, 24200, 86000, ' -Dqueueless=off '): evaluated objective: -74980.0
+2022-07-12 05:38:37|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:38:37|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 3700000, 24200, 88000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:38:37|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 3700000, 'p2': 24200, 'p3': 88000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:38:37|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:05:41.18
+2022-07-12 05:40:25|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 3700000, "p2": 24200, "p3": 88000, "p4": " -Dqueueless=off "} --> -74784.3
+2022-07-12 05:40:25|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 3700000, 'p2': 24200, 'p3': 88000, 'p4': ' -Dqueueless=off '} y: -74784.3
+2022-07-12 05:40:25|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:40:25|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 3700000, 'p2': 24200, 'p3': 88000, 'p4': ' -Dqueueless=off '} --> (2, 3700000, 24200, 88000, ' -Dqueueless=off '): evaluated objective: -74784.3
+2022-07-12 05:40:26|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:40:27|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 1480000, 22200, 99000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:40:27|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 1480000, 'p2': 22200, 'p3': 99000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:40:27|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:07:30.54
+2022-07-12 05:42:24|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 1480000, "p2": 22200, "p3": 99000, "p4": " -Dqueueless=off "} --> -74732.6
+2022-07-12 05:42:24|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 1480000, 'p2': 22200, 'p3': 99000, 'p4': ' -Dqueueless=off '} y: -74732.6
+2022-07-12 05:42:24|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:42:24|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 1480000, 'p2': 22200, 'p3': 99000, 'p4': ' -Dqueueless=off '} --> (2, 1480000, 22200, 99000, ' -Dqueueless=off '): evaluated objective: -74732.6
+2022-07-12 05:42:25|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:42:26|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 160000, 20000, 94000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:42:26|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 160000, 'p2': 20000, 'p3': 94000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:42:26|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:09:29.64
+2022-07-12 05:44:33|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 160000, "p2": 20000, "p3": 94000, "p4": " -Dqueueless=off "} --> -73829.7
+2022-07-12 05:44:33|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 160000, 'p2': 20000, 'p3': 94000, 'p4': ' -Dqueueless=off '} y: -73829.7
+2022-07-12 05:44:33|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:44:33|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 160000, 'p2': 20000, 'p3': 94000, 'p4': ' -Dqueueless=off '} --> (2, 160000, 20000, 94000, ' -Dqueueless=off '): evaluated objective: -73829.7
+2022-07-12 05:44:34|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:44:35|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 430000, 18700, 88000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:44:35|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 430000, 'p2': 18700, 'p3': 88000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:44:35|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:11:38.32
+2022-07-12 05:46:24|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 430000, "p2": 18700, "p3": 88000, "p4": " -Dqueueless=off "} --> -73108.3
+2022-07-12 05:46:24|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 430000, 'p2': 18700, 'p3': 88000, 'p4': ' -Dqueueless=off '} y: -73108.3
+2022-07-12 05:46:24|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:46:24|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 430000, 'p2': 18700, 'p3': 88000, 'p4': ' -Dqueueless=off '} --> (1, 430000, 18700, 88000, ' -Dqueueless=off '): evaluated objective: -73108.3
+2022-07-12 05:46:25|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:46:26|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 2710000, 19400, 92000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:46:26|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 2710000, 'p2': 19400, 'p3': 92000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:46:26|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:13:29.25
+2022-07-12 05:48:16|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 2710000, "p2": 19400, "p3": 92000, "p4": " -Dqueueless=off "} --> -73704.5
+2022-07-12 05:48:16|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 2710000, 'p2': 19400, 'p3': 92000, 'p4': ' -Dqueueless=off '} y: -73704.5
+2022-07-12 05:48:16|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:48:16|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 2710000, 'p2': 19400, 'p3': 92000, 'p4': ' -Dqueueless=off '} --> (2, 2710000, 19400, 92000, ' -Dqueueless=off '): evaluated objective: -73704.5
+2022-07-12 05:48:17|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:48:18|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 1480000, 19600, 86000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:48:18|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 1480000, 'p2': 19600, 'p3': 86000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:48:18|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:15:21.66
+2022-07-12 05:50:10|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 1480000, "p2": 19600, "p3": 86000, "p4": " -Dqueueless=off "} --> -73555.6
+2022-07-12 05:50:10|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 1480000, 'p2': 19600, 'p3': 86000, 'p4': ' -Dqueueless=off '} y: -73555.6
+2022-07-12 05:50:10|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:50:10|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 1480000, 'p2': 19600, 'p3': 86000, 'p4': ' -Dqueueless=off '} --> (1, 1480000, 19600, 86000, ' -Dqueueless=off '): evaluated objective: -73555.6
+2022-07-12 05:50:10|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:50:11|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 4510000, 19500, 88000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:50:11|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 4510000, 'p2': 19500, 'p3': 88000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:50:11|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:17:14.90
+2022-07-12 05:52:03|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 4510000, "p2": 19500, "p3": 88000, "p4": " -Dqueueless=off "} --> -73992.6
+2022-07-12 05:52:03|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 4510000, 'p2': 19500, 'p3': 88000, 'p4': ' -Dqueueless=off '} y: -73992.6
+2022-07-12 05:52:03|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:52:03|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 4510000, 'p2': 19500, 'p3': 88000, 'p4': ' -Dqueueless=off '} --> (2, 4510000, 19500, 88000, ' -Dqueueless=off '): evaluated objective: -73992.6
+2022-07-12 05:52:04|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:52:05|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 6840000, 40300, 67000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:52:05|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 6840000, 'p2': 40300, 'p3': 67000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:52:05|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:19:8.67
+2022-07-12 05:54:06|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 6840000, "p2": 40300, "p3": 67000, "p4": " -Dqueueless=off "} --> -75943.1
+2022-07-12 05:54:06|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 6840000, 'p2': 40300, 'p3': 67000, 'p4': ' -Dqueueless=off '} y: -75943.1
+2022-07-12 05:54:06|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:54:06|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 6840000, 'p2': 40300, 'p3': 67000, 'p4': ' -Dqueueless=off '} --> (2, 6840000, 40300, 67000, ' -Dqueueless=off '): evaluated objective: -75943.1
+2022-07-12 05:54:07|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:54:08|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 4440000, 19300, 80000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:54:08|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 4440000, 'p2': 19300, 'p3': 80000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:54:08|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:21:11.67
+2022-07-12 05:56:07|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 4440000, "p2": 19300, "p3": 80000, "p4": " -Dqueueless=off "} --> -72792.4
+2022-07-12 05:56:07|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 4440000, 'p2': 19300, 'p3': 80000, 'p4': ' -Dqueueless=off '} y: -72792.4
+2022-07-12 05:56:07|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:56:07|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 4440000, 'p2': 19300, 'p3': 80000, 'p4': ' -Dqueueless=off '} --> (1, 4440000, 19300, 80000, ' -Dqueueless=off '): evaluated objective: -72792.4
+2022-07-12 05:56:08|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:56:09|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 540000, 18500, 82000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:56:09|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 540000, 'p2': 18500, 'p3': 82000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:56:09|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:23:12.58
+2022-07-12 05:58:01|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 540000, "p2": 18500, "p3": 82000, "p4": " -Dqueueless=off "} --> -72419.7
+2022-07-12 05:58:01|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 540000, 'p2': 18500, 'p3': 82000, 'p4': ' -Dqueueless=off '} y: -72419.7
+2022-07-12 05:58:01|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 05:58:01|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 540000, 'p2': 18500, 'p3': 82000, 'p4': ' -Dqueueless=off '} --> (2, 540000, 18500, 82000, ' -Dqueueless=off '): evaluated objective: -72419.7
+2022-07-12 05:58:02|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 05:58:02|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 1150000, 17900, 94000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 05:58:02|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 1150000, 'p2': 17900, 'p3': 94000, 'p4': ' -Dqueueless=off '}
+2022-07-12 05:58:02|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:25:6.17
+2022-07-12 06:00:12|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 1150000, "p2": 17900, "p3": 94000, "p4": " -Dqueueless=off "} --> -73979.4
+2022-07-12 06:00:12|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 1150000, 'p2': 17900, 'p3': 94000, 'p4': ' -Dqueueless=off '} y: -73979.4
+2022-07-12 06:00:12|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:00:12|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 1150000, 'p2': 17900, 'p3': 94000, 'p4': ' -Dqueueless=off '} --> (2, 1150000, 17900, 94000, ' -Dqueueless=off '): evaluated objective: -73979.4
+2022-07-12 06:00:13|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:00:13|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 1700000, 17400, 98000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:00:13|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 1700000, 'p2': 17400, 'p3': 98000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:00:13|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:27:17.03
+2022-07-12 06:02:11|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 1700000, "p2": 17400, "p3": 98000, "p4": " -Dqueueless=off "} --> -72769.6
+2022-07-12 06:02:11|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 1700000, 'p2': 17400, 'p3': 98000, 'p4': ' -Dqueueless=off '} y: -72769.6
+2022-07-12 06:02:11|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:02:11|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 1700000, 'p2': 17400, 'p3': 98000, 'p4': ' -Dqueueless=off '} --> (1, 1700000, 17400, 98000, ' -Dqueueless=off '): evaluated objective: -72769.6
+2022-07-12 06:02:12|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:02:12|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 740000, 17100, 88000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:02:13|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 740000, 'p2': 17100, 'p3': 88000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:02:13|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:29:16.21
+2022-07-12 06:04:21|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 740000, "p2": 17100, "p3": 88000, "p4": " -Dqueueless=off "} --> -73601.5
+2022-07-12 06:04:21|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 740000, 'p2': 17100, 'p3': 88000, 'p4': ' -Dqueueless=off '} y: -73601.5
+2022-07-12 06:04:21|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:04:21|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 740000, 'p2': 17100, 'p3': 88000, 'p4': ' -Dqueueless=off '} --> (2, 740000, 17100, 88000, ' -Dqueueless=off '): evaluated objective: -73601.5
+2022-07-12 06:04:22|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:04:23|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [4, 1180000, 16700, 99000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:04:23|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 4, 'p1': 1180000, 'p2': 16700, 'p3': 99000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:04:23|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:31:26.33
+2022-07-12 06:05:42|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 4, "p1": 1180000, "p2": 16700, "p3": 99000, "p4": " -Dqueueless=off "} --> -69508.4
+2022-07-12 06:05:42|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 4, 'p1': 1180000, 'p2': 16700, 'p3': 99000, 'p4': ' -Dqueueless=off '} y: -69508.4
+2022-07-12 06:05:42|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:05:42|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 4, 'p1': 1180000, 'p2': 16700, 'p3': 99000, 'p4': ' -Dqueueless=off '} --> (4, 1180000, 16700, 99000, ' -Dqueueless=off '): evaluated objective: -69508.4
+2022-07-12 06:05:43|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:05:43|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 4530000, 17000, 52000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:05:43|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 4530000, 'p2': 17000, 'p3': 52000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:05:43|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:32:47.21
+2022-07-12 06:07:43|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 4530000, "p2": 17000, "p3": 52000, "p4": " -Dqueueless=off "} --> -73597.9
+2022-07-12 06:07:43|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 4530000, 'p2': 17000, 'p3': 52000, 'p4': ' -Dqueueless=off '} y: -73597.9
+2022-07-12 06:07:43|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:07:43|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 4530000, 'p2': 17000, 'p3': 52000, 'p4': ' -Dqueueless=off '} --> (2, 4530000, 17000, 52000, ' -Dqueueless=off '): evaluated objective: -73597.9
+2022-07-12 06:07:44|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:07:45|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 1990000, 16900, 48000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:07:45|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 1990000, 'p2': 16900, 'p3': 48000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:07:45|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:34:48.76
+2022-07-12 06:09:34|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 1990000, "p2": 16900, "p3": 48000, "p4": " -Dqueueless=off "} --> -73261.9
+2022-07-12 06:09:34|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 1990000, 'p2': 16900, 'p3': 48000, 'p4': ' -Dqueueless=off '} y: -73261.9
+2022-07-12 06:09:34|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:09:34|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 1990000, 'p2': 16900, 'p3': 48000, 'p4': ' -Dqueueless=off '} --> (1, 1990000, 16900, 48000, ' -Dqueueless=off '): evaluated objective: -73261.9
+2022-07-12 06:09:34|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:09:35|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 720000, 16400, 63000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:09:35|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 720000, 'p2': 16400, 'p3': 63000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:09:35|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:36:38.91
+2022-07-12 06:11:39|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 720000, "p2": 16400, "p3": 63000, "p4": " -Dqueueless=off "} --> -72770.8
+2022-07-12 06:11:39|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 720000, 'p2': 16400, 'p3': 63000, 'p4': ' -Dqueueless=off '} y: -72770.8
+2022-07-12 06:11:39|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:11:39|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 720000, 'p2': 16400, 'p3': 63000, 'p4': ' -Dqueueless=off '} --> (2, 720000, 16400, 63000, ' -Dqueueless=off '): evaluated objective: -72770.8
+2022-07-12 06:11:40|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:11:41|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 530000, 16200, 64000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:11:41|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 530000, 'p2': 16200, 'p3': 64000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:11:41|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:38:44.39
+2022-07-12 06:13:46|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 530000, "p2": 16200, "p3": 64000, "p4": " -Dqueueless=off "} --> -72466.3
+2022-07-12 06:13:46|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 530000, 'p2': 16200, 'p3': 64000, 'p4': ' -Dqueueless=off '} y: -72466.3
+2022-07-12 06:13:46|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:13:46|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 530000, 'p2': 16200, 'p3': 64000, 'p4': ' -Dqueueless=off '} --> (2, 530000, 16200, 64000, ' -Dqueueless=off '): evaluated objective: -72466.3
+2022-07-12 06:13:47|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:13:48|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5900000, 15800, 55000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:13:48|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5900000, 'p2': 15800, 'p3': 55000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:13:48|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:40:51.39
+2022-07-12 06:15:42|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5900000, "p2": 15800, "p3": 55000, "p4": " -Dqueueless=off "} --> -73073.8
+2022-07-12 06:15:42|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5900000, 'p2': 15800, 'p3': 55000, 'p4': ' -Dqueueless=off '} y: -73073.8
+2022-07-12 06:15:42|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:15:42|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5900000, 'p2': 15800, 'p3': 55000, 'p4': ' -Dqueueless=off '} --> (2, 5900000, 15800, 55000, ' -Dqueueless=off '): evaluated objective: -73073.8
+2022-07-12 06:15:43|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:15:43|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 6620000, 15800, 90000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:15:43|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 6620000, 'p2': 15800, 'p3': 90000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:15:43|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:42:47.09
+2022-07-12 06:17:34|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 6620000, "p2": 15800, "p3": 90000, "p4": " -Dqueueless=off "} --> -65245.7
+2022-07-12 06:17:34|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 6620000, 'p2': 15800, 'p3': 90000, 'p4': ' -Dqueueless=off '} y: -65245.7
+2022-07-12 06:17:34|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:17:34|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 6620000, 'p2': 15800, 'p3': 90000, 'p4': ' -Dqueueless=off '} --> (2, 6620000, 15800, 90000, ' -Dqueueless=off '): evaluated objective: -65245.7
+2022-07-12 06:17:35|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:17:35|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 6950000, 41800, 85000, ' -Dqueueless=on '] lie: -49040.1
+2022-07-12 06:17:35|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 6950000, 'p2': 41800, 'p3': 85000, 'p4': ' -Dqueueless=on '}
+2022-07-12 06:17:35|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:44:39.01
+2022-07-12 06:19:42|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 6950000, "p2": 41800, "p3": 85000, "p4": " -Dqueueless=on "} --> -72696.5
+2022-07-12 06:19:42|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 6950000, 'p2': 41800, 'p3': 85000, 'p4': ' -Dqueueless=on '} y: -72696.5
+2022-07-12 06:19:42|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:19:42|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 6950000, 'p2': 41800, 'p3': 85000, 'p4': ' -Dqueueless=on '} --> (2, 6950000, 41800, 85000, ' -Dqueueless=on '): evaluated objective: -72696.5
+2022-07-12 06:19:43|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:19:44|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 910000, 15900, 35000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:19:44|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 910000, 'p2': 15900, 'p3': 35000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:19:44|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:46:47.53
+2022-07-12 06:21:33|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 910000, "p2": 15900, "p3": 35000, "p4": " -Dqueueless=off "} --> -72765.9
+2022-07-12 06:21:33|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 910000, 'p2': 15900, 'p3': 35000, 'p4': ' -Dqueueless=off '} y: -72765.9
+2022-07-12 06:21:33|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:21:33|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 910000, 'p2': 15900, 'p3': 35000, 'p4': ' -Dqueueless=off '} --> (2, 910000, 15900, 35000, ' -Dqueueless=off '): evaluated objective: -72765.9
+2022-07-12 06:21:34|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:21:34|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 2480000, 16000, 11000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:21:34|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 2480000, 'p2': 16000, 'p3': 11000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:21:34|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:48:38.16
+2022-07-12 06:23:33|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 2480000, "p2": 16000, "p3": 11000, "p4": " -Dqueueless=off "} --> -72537.0
+2022-07-12 06:23:33|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 2480000, 'p2': 16000, 'p3': 11000, 'p4': ' -Dqueueless=off '} y: -72537.0
+2022-07-12 06:23:33|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:23:33|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 2480000, 'p2': 16000, 'p3': 11000, 'p4': ' -Dqueueless=off '} --> (2, 2480000, 16000, 11000, ' -Dqueueless=off '): evaluated objective: -72537.0
+2022-07-12 06:23:34|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:23:35|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7870000, 15700, 29000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:23:35|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7870000, 'p2': 15700, 'p3': 29000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:23:35|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:50:38.40
+2022-07-12 06:25:38|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7870000, "p2": 15700, "p3": 29000, "p4": " -Dqueueless=off "} --> -72586.8
+2022-07-12 06:25:38|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7870000, 'p2': 15700, 'p3': 29000, 'p4': ' -Dqueueless=off '} y: -72586.8
+2022-07-12 06:25:38|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:25:38|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7870000, 'p2': 15700, 'p3': 29000, 'p4': ' -Dqueueless=off '} --> (2, 7870000, 15700, 29000, ' -Dqueueless=off '): evaluated objective: -72586.8
+2022-07-12 06:25:39|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:25:39|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 260000, 11400, 51000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:25:39|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 260000, 'p2': 11400, 'p3': 51000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:25:39|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:52:43.00
+2022-07-12 06:27:47|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 260000, "p2": 11400, "p3": 51000, "p4": " -Dqueueless=off "} --> -70880.2
+2022-07-12 06:27:47|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 260000, 'p2': 11400, 'p3': 51000, 'p4': ' -Dqueueless=off '} y: -70880.2
+2022-07-12 06:27:47|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:27:47|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 260000, 'p2': 11400, 'p3': 51000, 'p4': ' -Dqueueless=off '} --> (1, 260000, 11400, 51000, ' -Dqueueless=off '): evaluated objective: -70880.2
+2022-07-12 06:27:47|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:27:48|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 3560000, 13400, 42000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:27:48|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 3560000, 'p2': 13400, 'p3': 42000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:27:48|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:54:51.99
+2022-07-12 06:30:14|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 3560000, "p2": 13400, "p3": 42000, "p4": " -Dqueueless=off "} --> -71709.3
+2022-07-12 06:30:14|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 3560000, 'p2': 13400, 'p3': 42000, 'p4': ' -Dqueueless=off '} y: -71709.3
+2022-07-12 06:30:14|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:30:14|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 3560000, 'p2': 13400, 'p3': 42000, 'p4': ' -Dqueueless=off '} --> (1, 3560000, 13400, 42000, ' -Dqueueless=off '): evaluated objective: -71709.3
+2022-07-12 06:30:15|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:30:16|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5670000, 13500, 28000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:30:16|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5670000, 'p2': 13500, 'p3': 28000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:30:16|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:57:19.66
+2022-07-12 06:32:17|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5670000, "p2": 13500, "p3": 28000, "p4": " -Dqueueless=off "} --> -71508.6
+2022-07-12 06:32:17|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5670000, 'p2': 13500, 'p3': 28000, 'p4': ' -Dqueueless=off '} y: -71508.6
+2022-07-12 06:32:17|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:32:17|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5670000, 'p2': 13500, 'p3': 28000, 'p4': ' -Dqueueless=off '} --> (2, 5670000, 13500, 28000, ' -Dqueueless=off '): evaluated objective: -71508.6
+2022-07-12 06:32:18|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:32:18|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 910000, 10000, 11000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:32:18|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 910000, 'p2': 10000, 'p3': 11000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:32:18|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:59:22.13
+2022-07-12 06:34:20|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 910000, "p2": 10000, "p3": 11000, "p4": " -Dqueueless=off "} --> -69284.0
+2022-07-12 06:34:20|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 910000, 'p2': 10000, 'p3': 11000, 'p4': ' -Dqueueless=off '} y: -69284.0
+2022-07-12 06:34:20|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:34:20|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 910000, 'p2': 10000, 'p3': 11000, 'p4': ' -Dqueueless=off '} --> (2, 910000, 10000, 11000, ' -Dqueueless=off '): evaluated objective: -69284.0
+2022-07-12 06:34:21|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:34:22|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7470000, 77200, 89000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:34:22|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7470000, 'p2': 77200, 'p3': 89000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:34:22|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:01:25.71
+2022-07-12 06:36:32|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7470000, "p2": 77200, "p3": 89000, "p4": " -Dqueueless=off "} --> -76469.2
+2022-07-12 06:36:32|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7470000, 'p2': 77200, 'p3': 89000, 'p4': ' -Dqueueless=off '} y: -76469.2
+2022-07-12 06:36:32|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:36:32|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7470000, 'p2': 77200, 'p3': 89000, 'p4': ' -Dqueueless=off '} --> (2, 7470000, 77200, 89000, ' -Dqueueless=off '): evaluated objective: -76469.2
+2022-07-12 06:36:32|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:36:33|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7480000, 92800, 86000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:36:33|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7480000, 'p2': 92800, 'p3': 86000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:36:33|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:03:37.03
+2022-07-12 06:38:26|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7480000, "p2": 92800, "p3": 86000, "p4": " -Dqueueless=off "} --> -76287.7
+2022-07-12 06:38:26|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7480000, 'p2': 92800, 'p3': 86000, 'p4': ' -Dqueueless=off '} y: -76287.7
+2022-07-12 06:38:26|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:38:26|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7480000, 'p2': 92800, 'p3': 86000, 'p4': ' -Dqueueless=off '} --> (2, 7480000, 92800, 86000, ' -Dqueueless=off '): evaluated objective: -76287.7
+2022-07-12 06:38:27|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:38:27|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [4, 7620000, 53200, 87000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:38:27|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 4, 'p1': 7620000, 'p2': 53200, 'p3': 87000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:38:28|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:05:31.21
+2022-07-12 06:40:24|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 4, "p1": 7620000, "p2": 53200, "p3": 87000, "p4": " -Dqueueless=off "} --> -72182.4
+2022-07-12 06:40:24|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 4, 'p1': 7620000, 'p2': 53200, 'p3': 87000, 'p4': ' -Dqueueless=off '} y: -72182.4
+2022-07-12 06:40:24|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:40:24|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 4, 'p1': 7620000, 'p2': 53200, 'p3': 87000, 'p4': ' -Dqueueless=off '} --> (4, 7620000, 53200, 87000, ' -Dqueueless=off '): evaluated objective: -72182.4
+2022-07-12 06:40:25|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:40:25|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7910000, 84100, 82000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:40:25|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7910000, 'p2': 84100, 'p3': 82000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:40:25|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:07:29.20
+2022-07-12 06:42:23|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7910000, "p2": 84100, "p3": 82000, "p4": " -Dqueueless=off "} --> -76929.4
+2022-07-12 06:42:23|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7910000, 'p2': 84100, 'p3': 82000, 'p4': ' -Dqueueless=off '} y: -76929.4
+2022-07-12 06:42:23|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:42:23|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7910000, 'p2': 84100, 'p3': 82000, 'p4': ' -Dqueueless=off '} --> (2, 7910000, 84100, 82000, ' -Dqueueless=off '): evaluated objective: -76929.4
+2022-07-12 06:42:24|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:42:24|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7930000, 44800, 81000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:42:24|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7930000, 'p2': 44800, 'p3': 81000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:42:24|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:09:28.08
+2022-07-12 06:44:24|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7930000, "p2": 44800, "p3": 81000, "p4": " -Dqueueless=off "} --> -75434.9
+2022-07-12 06:44:24|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7930000, 'p2': 44800, 'p3': 81000, 'p4': ' -Dqueueless=off '} y: -75434.9
+2022-07-12 06:44:24|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:44:24|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7930000, 'p2': 44800, 'p3': 81000, 'p4': ' -Dqueueless=off '} --> (2, 7930000, 44800, 81000, ' -Dqueueless=off '): evaluated objective: -75434.9
+2022-07-12 06:44:24|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:44:25|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7820000, 83700, 83000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:44:25|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7820000, 'p2': 83700, 'p3': 83000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:44:25|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:11:28.98
+2022-07-12 06:46:25|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7820000, "p2": 83700, "p3": 83000, "p4": " -Dqueueless=off "} --> -75890.0
+2022-07-12 06:46:25|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7820000, 'p2': 83700, 'p3': 83000, 'p4': ' -Dqueueless=off '} y: -75890.0
+2022-07-12 06:46:25|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:46:25|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7820000, 'p2': 83700, 'p3': 83000, 'p4': ' -Dqueueless=off '} --> (2, 7820000, 83700, 83000, ' -Dqueueless=off '): evaluated objective: -75890.0
+2022-07-12 06:46:26|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:46:27|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7650000, 76700, 79000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:46:27|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7650000, 'p2': 76700, 'p3': 79000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:46:27|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:13:30.65
+2022-07-12 06:48:30|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7650000, "p2": 76700, "p3": 79000, "p4": " -Dqueueless=off "} --> -76884.7
+2022-07-12 06:48:30|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7650000, 'p2': 76700, 'p3': 79000, 'p4': ' -Dqueueless=off '} y: -76884.7
+2022-07-12 06:48:30|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:48:30|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7650000, 'p2': 76700, 'p3': 79000, 'p4': ' -Dqueueless=off '} --> (2, 7650000, 76700, 79000, ' -Dqueueless=off '): evaluated objective: -76884.7
+2022-07-12 06:48:31|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:48:32|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, 7640000, 77600, 78000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:48:32|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': 7640000, 'p2': 77600, 'p3': 78000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:48:32|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:15:35.68
+2022-07-12 06:50:33|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": 7640000, "p2": 77600, "p3": 78000, "p4": " -Dqueueless=off "} --> -74726.3
+2022-07-12 06:50:33|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': 7640000, 'p2': 77600, 'p3': 78000, 'p4': ' -Dqueueless=off '} y: -74726.3
+2022-07-12 06:50:33|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:50:33|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': 7640000, 'p2': 77600, 'p3': 78000, 'p4': ' -Dqueueless=off '} --> (1, 7640000, 77600, 78000, ' -Dqueueless=off '): evaluated objective: -74726.3
+2022-07-12 06:50:34|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:50:34|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7990000, 88800, 79000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:50:34|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7990000, 'p2': 88800, 'p3': 79000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:50:34|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:17:38.18
+2022-07-12 06:52:24|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7990000, "p2": 88800, "p3": 79000, "p4": " -Dqueueless=off "} --> -75865.2
+2022-07-12 06:52:24|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7990000, 'p2': 88800, 'p3': 79000, 'p4': ' -Dqueueless=off '} y: -75865.2
+2022-07-12 06:52:24|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:52:24|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7990000, 'p2': 88800, 'p3': 79000, 'p4': ' -Dqueueless=off '} --> (2, 7990000, 88800, 79000, ' -Dqueueless=off '): evaluated objective: -75865.2
+2022-07-12 06:52:25|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:52:26|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [3, 7770000, 94100, 81000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:52:26|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 3, 'p1': 7770000, 'p2': 94100, 'p3': 81000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:52:26|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:19:29.82
+2022-07-12 06:54:30|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 3, "p1": 7770000, "p2": 94100, "p3": 81000, "p4": " -Dqueueless=off "} --> -73457.2
+2022-07-12 06:54:30|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 3, 'p1': 7770000, 'p2': 94100, 'p3': 81000, 'p4': ' -Dqueueless=off '} y: -73457.2
+2022-07-12 06:54:30|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:54:30|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 3, 'p1': 7770000, 'p2': 94100, 'p3': 81000, 'p4': ' -Dqueueless=off '} --> (3, 7770000, 94100, 81000, ' -Dqueueless=off '): evaluated objective: -73457.2
+2022-07-12 06:54:31|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:54:31|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7700000, 78000, 78000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:54:31|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7700000, 'p2': 78000, 'p3': 78000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:54:31|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:21:35.11
+2022-07-12 06:56:28|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7700000, "p2": 78000, "p3": 78000, "p4": " -Dqueueless=off "} --> -75398.3
+2022-07-12 06:56:28|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7700000, 'p2': 78000, 'p3': 78000, 'p4': ' -Dqueueless=off '} y: -75398.3
+2022-07-12 06:56:28|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:56:28|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7700000, 'p2': 78000, 'p3': 78000, 'p4': ' -Dqueueless=off '} --> (2, 7700000, 78000, 78000, ' -Dqueueless=off '): evaluated objective: -75398.3
+2022-07-12 06:56:29|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:56:29|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 1220000, 99200, 79000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:56:29|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 1220000, 'p2': 99200, 'p3': 79000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:56:29|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:23:33.07
+2022-07-12 06:58:26|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 1220000, "p2": 99200, "p3": 79000, "p4": " -Dqueueless=off "} --> -76462.8
+2022-07-12 06:58:26|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 1220000, 'p2': 99200, 'p3': 79000, 'p4': ' -Dqueueless=off '} y: -76462.8
+2022-07-12 06:58:26|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 06:58:26|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 1220000, 'p2': 99200, 'p3': 79000, 'p4': ' -Dqueueless=off '} --> (2, 1220000, 99200, 79000, ' -Dqueueless=off '): evaluated objective: -76462.8
+2022-07-12 06:58:27|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 06:58:28|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7640000, 72200, 84000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 06:58:28|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7640000, 'p2': 72200, 'p3': 84000, 'p4': ' -Dqueueless=off '}
+2022-07-12 06:58:28|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:25:31.49
+2022-07-12 07:00:25|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7640000, "p2": 72200, "p3": 84000, "p4": " -Dqueueless=off "} --> -76178.9
+2022-07-12 07:00:25|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7640000, 'p2': 72200, 'p3': 84000, 'p4': ' -Dqueueless=off '} y: -76178.9
+2022-07-12 07:00:25|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:00:25|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7640000, 'p2': 72200, 'p3': 84000, 'p4': ' -Dqueueless=off '} --> (2, 7640000, 72200, 84000, ' -Dqueueless=off '): evaluated objective: -76178.9
+2022-07-12 07:00:26|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:00:27|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 1880000, 76800, 80000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:00:27|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 1880000, 'p2': 76800, 'p3': 80000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:00:27|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:27:30.64
+2022-07-12 07:02:26|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 1880000, "p2": 76800, "p3": 80000, "p4": " -Dqueueless=off "} --> -75969.5
+2022-07-12 07:02:26|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 1880000, 'p2': 76800, 'p3': 80000, 'p4': ' -Dqueueless=off '} y: -75969.5
+2022-07-12 07:02:26|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:02:26|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 1880000, 'p2': 76800, 'p3': 80000, 'p4': ' -Dqueueless=off '} --> (2, 1880000, 76800, 80000, ' -Dqueueless=off '): evaluated objective: -75969.5
+2022-07-12 07:02:27|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:02:27|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 6140000, 5600, 46000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:02:27|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 6140000, 'p2': 5600, 'p3': 46000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:02:27|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:29:31.12
+2022-07-12 07:04:33|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 6140000, "p2": 5600, "p3": 46000, "p4": " -Dqueueless=off "} --> -64634.4
+2022-07-12 07:04:33|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 6140000, 'p2': 5600, 'p3': 46000, 'p4': ' -Dqueueless=off '} y: -64634.4
+2022-07-12 07:04:33|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:04:33|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 6140000, 'p2': 5600, 'p3': 46000, 'p4': ' -Dqueueless=off '} --> (2, 6140000, 5600, 46000, ' -Dqueueless=off '): evaluated objective: -64634.4
+2022-07-12 07:04:34|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:04:35|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7660000, 99000, 84000, ' -Dqueueless=on '] lie: -49040.1
+2022-07-12 07:04:35|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7660000, 'p2': 99000, 'p3': 84000, 'p4': ' -Dqueueless=on '}
+2022-07-12 07:04:35|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:31:38.68
+2022-07-12 07:06:38|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7660000, "p2": 99000, "p3": 84000, "p4": " -Dqueueless=on "} --> -72287.8
+2022-07-12 07:06:38|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7660000, 'p2': 99000, 'p3': 84000, 'p4': ' -Dqueueless=on '} y: -72287.8
+2022-07-12 07:06:38|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:06:38|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7660000, 'p2': 99000, 'p3': 84000, 'p4': ' -Dqueueless=on '} --> (2, 7660000, 99000, 84000, ' -Dqueueless=on '): evaluated objective: -72287.8
+2022-07-12 07:06:38|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:06:39|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7650000, 61200, 88000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:06:39|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7650000, 'p2': 61200, 'p3': 88000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:06:39|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:33:42.98
+2022-07-12 07:08:33|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7650000, "p2": 61200, "p3": 88000, "p4": " -Dqueueless=off "} --> -75680.0
+2022-07-12 07:08:33|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7650000, 'p2': 61200, 'p3': 88000, 'p4': ' -Dqueueless=off '} y: -75680.0
+2022-07-12 07:08:33|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:08:33|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7650000, 'p2': 61200, 'p3': 88000, 'p4': ' -Dqueueless=off '} --> (2, 7650000, 61200, 88000, ' -Dqueueless=off '): evaluated objective: -75680.0
+2022-07-12 07:08:34|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:08:35|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5260000, 99400, 81000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:08:35|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5260000, 'p2': 99400, 'p3': 81000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:08:35|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:35:38.69
+2022-07-12 07:10:28|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5260000, "p2": 99400, "p3": 81000, "p4": " -Dqueueless=off "} --> -76499.9
+2022-07-12 07:10:28|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5260000, 'p2': 99400, 'p3': 81000, 'p4': ' -Dqueueless=off '} y: -76499.9
+2022-07-12 07:10:28|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:10:28|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5260000, 'p2': 99400, 'p3': 81000, 'p4': ' -Dqueueless=off '} --> (2, 5260000, 99400, 81000, ' -Dqueueless=off '): evaluated objective: -76499.9
+2022-07-12 07:10:29|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:10:30|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7410000, 96300, 84000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:10:30|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7410000, 'p2': 96300, 'p3': 84000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:10:30|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:37:33.35
+2022-07-12 07:12:21|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7410000, "p2": 96300, "p3": 84000, "p4": " -Dqueueless=off "} --> -76680.7
+2022-07-12 07:12:21|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7410000, 'p2': 96300, 'p3': 84000, 'p4': ' -Dqueueless=off '} y: -76680.7
+2022-07-12 07:12:21|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:12:21|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7410000, 'p2': 96300, 'p3': 84000, 'p4': ' -Dqueueless=off '} --> (2, 7410000, 96300, 84000, ' -Dqueueless=off '): evaluated objective: -76680.7
+2022-07-12 07:12:21|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:12:22|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 6820000, 97000, 85000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:12:22|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 6820000, 'p2': 97000, 'p3': 85000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:12:22|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:39:25.96
+2022-07-12 07:14:18|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 6820000, "p2": 97000, "p3": 85000, "p4": " -Dqueueless=off "} --> -76371.7
+2022-07-12 07:14:18|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 6820000, 'p2': 97000, 'p3': 85000, 'p4': ' -Dqueueless=off '} y: -76371.7
+2022-07-12 07:14:18|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:14:18|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 6820000, 'p2': 97000, 'p3': 85000, 'p4': ' -Dqueueless=off '} --> (2, 6820000, 97000, 85000, ' -Dqueueless=off '): evaluated objective: -76371.7
+2022-07-12 07:14:19|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:14:20|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7250000, 97300, 81000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:14:20|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7250000, 'p2': 97300, 'p3': 81000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:14:20|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:41:23.50
+2022-07-12 07:16:19|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7250000, "p2": 97300, "p3": 81000, "p4": " -Dqueueless=off "} --> -76813.3
+2022-07-12 07:16:19|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7250000, 'p2': 97300, 'p3': 81000, 'p4': ' -Dqueueless=off '} y: -76813.3
+2022-07-12 07:16:19|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:16:19|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 7250000, 'p2': 97300, 'p3': 81000, 'p4': ' -Dqueueless=off '} --> (2, 7250000, 97300, 81000, ' -Dqueueless=off '): evaluated objective: -76813.3
+2022-07-12 07:16:20|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:16:20|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5160000, 99700, 84000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:16:20|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5160000, 'p2': 99700, 'p3': 84000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:16:20|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:43:24.21
+2022-07-12 07:18:37|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5160000, "p2": 99700, "p3": 84000, "p4": " -Dqueueless=off "} --> -76625.0
+2022-07-12 07:18:37|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5160000, 'p2': 99700, 'p3': 84000, 'p4': ' -Dqueueless=off '} y: -76625.0
+2022-07-12 07:18:37|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:18:37|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5160000, 'p2': 99700, 'p3': 84000, 'p4': ' -Dqueueless=off '} --> (2, 5160000, 99700, 84000, ' -Dqueueless=off '): evaluated objective: -76625.0
+2022-07-12 07:18:38|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:18:39|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 8000000, 96800, 84000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:18:39|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 8000000, 'p2': 96800, 'p3': 84000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:18:39|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:45:42.49
+2022-07-12 07:20:39|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 8000000, "p2": 96800, "p3": 84000, "p4": " -Dqueueless=off "} --> -76394.3
+2022-07-12 07:20:39|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 8000000, 'p2': 96800, 'p3': 84000, 'p4': ' -Dqueueless=off '} y: -76394.3
+2022-07-12 07:20:39|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:20:39|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 8000000, 'p2': 96800, 'p3': 84000, 'p4': ' -Dqueueless=off '} --> (2, 8000000, 96800, 84000, ' -Dqueueless=off '): evaluated objective: -76394.3
+2022-07-12 07:20:40|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:20:40|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 4520000, 99900, 83000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:20:40|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 4520000, 'p2': 99900, 'p3': 83000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:20:40|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:47:44.14
+2022-07-12 07:22:38|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 4520000, "p2": 99900, "p3": 83000, "p4": " -Dqueueless=off "} --> -75984.9
+2022-07-12 07:22:38|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 4520000, 'p2': 99900, 'p3': 83000, 'p4': ' -Dqueueless=off '} y: -75984.9
+2022-07-12 07:22:38|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:22:38|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 4520000, 'p2': 99900, 'p3': 83000, 'p4': ' -Dqueueless=off '} --> (2, 4520000, 99900, 83000, ' -Dqueueless=off '): evaluated objective: -75984.9
+2022-07-12 07:22:39|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:22:40|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 4920000, 98300, 21000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:22:40|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 4920000, 'p2': 98300, 'p3': 21000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:22:40|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:49:43.70
+2022-07-12 07:24:32|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 4920000, "p2": 98300, "p3": 21000, "p4": " -Dqueueless=off "} --> -76264.3
+2022-07-12 07:24:32|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 4920000, 'p2': 98300, 'p3': 21000, 'p4': ' -Dqueueless=off '} y: -76264.3
+2022-07-12 07:24:32|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:24:32|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 4920000, 'p2': 98300, 'p3': 21000, 'p4': ' -Dqueueless=off '} --> (2, 4920000, 98300, 21000, ' -Dqueueless=off '): evaluated objective: -76264.3
+2022-07-12 07:24:33|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:24:33|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5070000, 96500, 50000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:24:33|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5070000, 'p2': 96500, 'p3': 50000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:24:33|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:51:37.08
+2022-07-12 07:26:38|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5070000, "p2": 96500, "p3": 50000, "p4": " -Dqueueless=off "} --> -76660.6
+2022-07-12 07:26:38|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5070000, 'p2': 96500, 'p3': 50000, 'p4': ' -Dqueueless=off '} y: -76660.6
+2022-07-12 07:26:38|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:26:38|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5070000, 'p2': 96500, 'p3': 50000, 'p4': ' -Dqueueless=off '} --> (2, 5070000, 96500, 50000, ' -Dqueueless=off '): evaluated objective: -76660.6
+2022-07-12 07:26:39|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:26:40|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5140000, 95400, 52000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:26:40|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5140000, 'p2': 95400, 'p3': 52000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:26:40|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:53:43.62
+2022-07-12 07:28:45|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5140000, "p2": 95400, "p3": 52000, "p4": " -Dqueueless=off "} --> -76337.3
+2022-07-12 07:28:45|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5140000, 'p2': 95400, 'p3': 52000, 'p4': ' -Dqueueless=off '} y: -76337.3
+2022-07-12 07:28:45|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:28:45|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5140000, 'p2': 95400, 'p3': 52000, 'p4': ' -Dqueueless=off '} --> (2, 5140000, 95400, 52000, ' -Dqueueless=off '): evaluated objective: -76337.3
+2022-07-12 07:28:46|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:28:47|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 5340000, 95300, 15000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:28:47|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 5340000, 'p2': 95300, 'p3': 15000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:28:47|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:55:50.80
+2022-07-12 07:30:45|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 5340000, "p2": 95300, "p3": 15000, "p4": " -Dqueueless=off "} --> -76077.6
+2022-07-12 07:30:45|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 5340000, 'p2': 95300, 'p3': 15000, 'p4': ' -Dqueueless=off '} y: -76077.6
+2022-07-12 07:30:45|29150|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-07-12 07:30:45|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 2, 'p1': 5340000, 'p2': 95300, 'p3': 15000, 'p4': ' -Dqueueless=off '} --> (2, 5340000, 95300, 15000, ' -Dqueueless=off '): evaluated objective: -76077.6
+2022-07-12 07:30:46|29150|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-07-12 07:30:47|29150|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [2, 7070000, 97300, 19000, ' -Dqueueless=off '] lie: -49040.1
+2022-07-12 07:30:47|29150|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 2, 'p1': 7070000, 'p2': 97300, 'p3': 19000, 'p4': ' -Dqueueless=off '}
+2022-07-12 07:30:47|29150|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:57:50.57
+2022-07-12 07:32:54|29150|ERROR|ytopt.evaluator.subprocess_evaluator:50] Eval failed:
+2022-07-12 07:32:55|29150|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 2, "p1": 7070000, "p2": 97300, "p3": 19000, "p4": " -Dqueueless=off "} --> 0.0
+2022-07-12 07:32:55|29150|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 2, 'p1': 7070000, 'p2': 97300, 'p3': 19000, 'p4': ' -Dqueueless=off '} y: 0.0
+2022-07-12 07:32:55|29150|INFO|ytopt.search.hps.ambs:120] Hyperopt driver finishing
